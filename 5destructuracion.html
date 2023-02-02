@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destructuración</title>
+  </head>
+  <body>
+    <h1>Destructuración</h1>
+    <p>Ver la consola para ver el funcionamiento</p>
+    <script>
+      // DESTRUCTURACION EN ARRAYS
+      const numeros = [1, 2, 3, 4];
+      const [uno, dos, tres, cuatro] = numeros;
+      console.log(uno, dos, tres, cuatro);
+
+      // DESTRUCTURACIÓN EN OBJETOS
+      const francisco = {
+        nombre: "Francisco",
+        apellido: "Paredes",
+        edad: 50,
+      };
+      const { nombre, apellido, edad } = francisco;
+      console.log(nombre, apellido, edad);
+
+      const numbers = [10, 20, 30];
+      const [diez, veinte, treinta] = numbers;
+      console.log(diez, veinte, treinta);
+
+      const perro = {
+        color: "Blanco",
+        raza: "Yo que sé",
+      };
+      const { color, raza } = perro;
+      console.log(color, raza);
+    </script>
+  </body>
+</html>
