@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prototipos</title>
+  </head>
+  <body>
+    <h1>Prototipos</h1>
+    <script>
+      // CREAMOS NUESTRA CLASE
+      function Animal(nombre, genero) {
+        this.nombre;
+        this.genero;
+      }
+
+      // MÉTODOS FUERA DE LA FUNCIÓN CONSTRUCTORA PARA QUE NO SE DUPLIQUEN
+      Animal.prototype.sonar = function () {
+        console.log("Hago sonidos pq estoy vivo");
+      };
+      Animal.prototype.hablar = function () {
+        console.log("Estoy hablando");
+      };
+
+      // CREAMOS UNA NUEVA VARIABLE BASADA EN LA FUNCIÓN CONSTRUCTORA
+      const simba = new Animal("Perro", "Caniche"),
+        tobie = new Animal("Perro", "Pastor alemán");
+
+      console.log(simba);
+      console.log(tobie);
+      simba.sonar();
+      simba.hablar();
+    </script>
+  </body>
+</html>

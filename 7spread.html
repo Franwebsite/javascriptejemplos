@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uso de Spread</title>
+  </head>
+  <body>
+    <h1>Uso de Spread</h1>
+    <script>
+      const sumar = function (a, b, ...c) {
+        let resultado = a + b;
+        c.forEach(function (n) {
+          resultado += n;
+        });
+
+        return resultado;
+      };
+
+      const restar = (a, b, ...c) => {
+        let resultado = -a - b;
+        c.forEach(function (n) {
+          resultado -= n;
+        });
+
+        return resultado;
+      };
+      // USO DE REST
+      console.log(sumar(1, 2, 3, 10));
+      console.log(restar(1, 2, 3, 10));
+      // USO DE SPREAD
+    </script>
+  </body>
+</html>

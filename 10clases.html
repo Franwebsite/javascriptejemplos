@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Clases y Herencia</h1>
+    <script>
+      class Persona {
+        constructor(nombre, apellido) {
+          this.nombre = nombre;
+          this.apellido = apellido;
+        }
+
+        hablar() {
+          console.log("Estoy hablando");
+        }
+        correr() {
+          console.log("Estoy corriendo");
+        }
+        recogerPropiedades() {
+          console.log(`Mi nombre es ${this.nombre} ${this.apellido}`);
+        }
+      }
+
+      const francisco = new Persona("Francisco", "Paredes");
+      console.log(francisco.nombre);
+      console.log(francisco.apellido);
+
+      francisco.recogerPropiedades();
+      francisco.hablar();
+      francisco.correr();
+    </script>
+  </body>
+</html>
