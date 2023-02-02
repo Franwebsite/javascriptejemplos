@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bucles</title>
+  </head>
+  <body>
+    <h1>Bucles</h1>
+    <h2>Bucles for, forin (objetos) y forof (arrays y cadenas)</h2>
+    <script>
+      // BUCLE FOR, EJM
+      console.log("Bucle for");
+      const numeros = [1, 2, 3];
+      for (let i = 0; i < numeros.length; i++) {
+        console.log(numeros[i]);
+      }
+
+      // BUCLE FORIN (PARA OBJETOS)
+      console.log("Bucle forin");
+      const francisco = {
+        nombre: "Francisco",
+        apellido: "Paredes",
+        edad: 50,
+      };
+      // IMPRIME SOLO PROPIEDADES
+      for (e in francisco) {
+        console.log(e);
+      }
+
+      // IMPRIME PROPIEDADES Y VALORES DE LAS PROPIEDADES
+      for (e in francisco) {
+        console.log(`Propiedad: ${e}, Valor: ${francisco[e]}`);
+      }
+
+      // BUCLE FOROF (PARA ARRAYS Y TEXTO)
+      console.log("Bucle forof (para arrays y texto)");
+      // MANEJAMOS EL ARRAY
+      const numeros2 = [10, 20, 30];
+      let cadena = "Hola Mundo";
+      console.log("forof en un array");
+      for (e of numeros2) {
+        console.log(e);
+      }
+
+      console.log("forof en una cadena");
+      for (e of cadena) {
+        console.log(e);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú y submenús</title>
+    <style>
+      .menu {
+        position: relative;
+        width: 100%;
+      }
+      .menu .submenu {
+        display: none;
+      }
+      .submenu {
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Menú y Submenús</h1>
+    </header>
+    <nav class="menu">
+      <a href="#">Home</a>
+      <a href="#">Conciertos</a>
+      <nav class="submenu">
+        <a href="#">2021</a>
+        <a href="#">2022</a>
+      </nav>
+      <a href="#">Sobre mí</a>
+    </nav>
+  </body>
+</html>
